@@ -1,0 +1,26 @@
+# Private keys and secrets
+*.key
+*-key.pem
+*_key.pem
+*.p12
+*.pfx
+secrets/
+pki/ca/secrets/
+pki/ca/db/
+.step/
+password*.txt
+
+# TLS session-key logs
+*keylog*
+*.keylog
+
+# Mosquitto runtime
+*.db
+mosquitto.log
+
+# Go and editor
+bin/
+*.exe
+.env
+.vscode/
+.DS_Store
