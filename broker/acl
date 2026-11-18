@@ -1,0 +1,10 @@
+# Each device may publish only to its own data topic.
+# %u = username = the name on the client's cert (thanks to use_identity_as_username)
+pattern write sensor/%u/data
+
+# Each device may read only its own command topic
+pattern read sensor/%u/cmd
+
+# A monitoring identity can read all sensor data
+user monitor
+topic read sensor/#
